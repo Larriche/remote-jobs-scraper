@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <title>LaraJobs</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="nyJfh56ILmW0OwULOAZXScQ0jgiKHCiG9GQoXJC2">
+
+    <!-- Styles -->
+    <link href="/css/app.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script>
+        window.Laravel = {"csrfToken":"nyJfh56ILmW0OwULOAZXScQ0jgiKHCiG9GQoXJC2"}    </script>
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <!-- Collapsed Hamburger -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Branding Image -->
+                    <a class="navbar-brand" href="https://larajobs.com">
+                        <img src="/img/logo.svg">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/guarantee">Guarantee</a></li>
+                        <li><a href="/create" class="post-job">Post a Job</a></li>
+                                            </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Authentication Links -->
+                                                    <li><a href="https://larajobs.com/login">Login</a></li>
+                            <li><a href="https://larajobs.com/register">Register</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                                <div class="col-md-8 main">
+                    
+    <form class="search">
+        <section class="clearfix">
+            <div class="item input">
+                <label for="location">Location:</label>
+                <input id="location" type="search" name="location" placeholder="New York">
+            </div>
+            <div class="item">
+                <label for="type">Remote:</label>
+                <input type="checkbox" name="remote" value="1">
+            </div>
+            <div class="item">
+                <label for="submit">Filter</label>
+                <button type="submit" class="btn btn-default btn-sm">Submit</button>
+            </div>
+        </section>
+    </form>
+
+    <table class="jobs">
+                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.tryphi.com/job/laravel-developer/" href="/job/1173">
+                            <img width="65" height="65" src="/storage/logos/3tn4lwGVQjorlwPbxh3g8fTZaKiWTxX8uoN62kl8.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                    <div class="new">NEW</div>
+                                                Phi Gaming, LLC
+                    </h4>
+                    <div class="description">Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://bitbucket.org/snippets/truecompliance/LenAEG/laravel-developer-35-40k-london" href="/job/1172">
+                            <img width="65" height="65" src="/storage/logos/9lc4HJ4wadSOUhmnkBuzEAfpmEFWMvE403SddTZh.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                    <div class="new">NEW</div>
+                                                True Compliance
+                    </h4>
+                    <div class="description">Laravel Developer | £35 - 40k | London</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        London
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="">
+    <td>
+        <a data-url="https://www.hosttech.ch/sites/default/files/Fullstack-Developer-2018.pdf" href="/job/1171">
+                            <img width="65" height="65" src="/storage/logos/tw21nyaKEyVizmpGeuZbCiOK6BGVYwAWIDeeFcYG.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                    <div class="new">NEW</div>
+                                                hosttech GmbH
+                    </h4>
+                    <div class="description">Fullstack Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Richterswil 
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.paperdodo.com/careers" href="/job/1170">
+                            <img width="65" height="65" src="/storage/logos/DJuSIQkTl80tuW8SbJy19fUhDHRWQam40A35UeWu.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                PDD Inc
+                    </h4>
+                    <div class="description">Senior Laravel Developer (VueJs Experience)</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Toronto
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://bonkstudios.com/jobs/position/laravel" href="/job/1169">
+                            <img width="65" height="65" src="/storage/logos/90ea7a2e5dff8a0ba98b6065cdd0379a.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Bonk Studios
+                    </h4>
+                    <div class="description">Senior &amp; Mid level Laravel Developers</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.brightoak.com/blog/bright-oak-laravel-php-developer-position/" href="/job/1168">
+                            <img width="65" height="65" src="/storage/logos/dJ6l4a85SUAXUxk7U4eh9D6CxuhUd9nBjZOUMg1V.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Bright Oak
+                    </h4>
+                    <div class="description">Senior Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://springboardvr.recruiterbox.com/jobs/fk01uvs" href="/job/1167">
+                            <img width="65" height="65" src="/storage/logos/6cc115475a8ae4ff5cdf5df1cc5a8391.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                SpringboardVR
+                    </h4>
+                    <div class="description">Laravel / PHP Backend Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://x-team.com/remote-php-developer-jobs/?utm_source=larajobs&amp;utm_medium=board&amp;utm_campaign=larajobs-q4-18" href="/job/1166">
+                            <img width="65" height="65" src="/storage/logos/30q55Rdaycq1oZEnVJgyaYk6acY1vF5SBQly6rIn.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                X-Team
+                    </h4>
+                    <div class="description">PHP Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://zingle.workable.com/jobs/737337" href="/job/1165">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Zingle
+                    </h4>
+                    <div class="description">Senior Software Architect</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Carlsbad, CA
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://vueschool.io/jobs" href="/job/1164">
+                            <img width="65" height="65" src="/storage/logos/bhN7Farz30pCw5yuKLOSuhaQGrH5JSo9MTyY9QbY.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                VueSchool.io
+                    </h4>
+                    <div class="description">Skilled part time freelancer required, long term</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://vivapets.squarespace.com" href="/job/1163">
+                            <img width="65" height="65" src="/storage/logos/cKqGEG57ZAmYiyqDgUSpaY24NcI2voFh7uZowFM1.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Vivapets
+                    </h4>
+                    <div class="description">Lead Software Engineer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Porto, Portugal
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://docs.google.com/forms/d/e/1FAIpQLSeYL-KaPKHCkT3o8eIRcleScce0qC_V-h6GdGY8ih1657zwdA/viewform?usp=pp_url" href="/job/1162">
+                            <img width="65" height="65" src="/storage/logos/oci9gfNE6ttsDeesITQjPVHHqJ7DsGAqeC4928Rz.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                ShineOn
+                    </h4>
+                    <div class="description">Engineer with previous full-time Laravel experience required / Ecom a plus.</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.cisecurity.org/about-us/jobs/senior-application-developer-2/" href="/job/1161">
+                            <img width="65" height="65" src="/storage/logos/AIY8AG4qqWsXknDCsieJTAEZ6F903nz607k3FvPd.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Center for Internet Security (CIS)
+                    </h4>
+                    <div class="description">Sr Application Developer </div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Albany, NY or Remote 
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.cloudappteam.com/senior-laravel-developer" href="/job/1160">
+                            <img width="65" height="65" src="/storage/logos/U66GabZchCKppATf5gNHBJVdiRYlKGqt9KQx3pP9.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Cloud Apps Team
+                    </h4>
+                    <div class="description">Fortune 50 Company Seeks Senior / Lead Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://bitbucket.org/snippets/journolink/BeGy4K" href="/job/1159">
+                            <img width="65" height="65" src="/storage/logos/5f0872dd979466e2d5fc0579c6aee2f3.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                JournoLink
+                    </h4>
+                    <div class="description">Junior/Mid PHP Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Cardiff, UK
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://gist.github.com/JonoB/ad06d6664df7560f47c390f2abb4066f" href="/job/1128">
+                            <img width="65" height="65" src="/storage/logos/lh9tYzRyN5ilOhwXtf9mNudpC8A63Q16JV1y0EBt.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Mettle
+                    </h4>
+                    <div class="description">Laravel Developer (mid level)</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Remote (UK or EU based)
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="http://www.f-1consulting.com/?page_id=741" href="/job/1158">
+                            <img width="65" height="65" src="/storage/logos/ftfyPqEn77eqDVPfBTkx1NfetOoe0KFv5Xdxjk6r.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Function One Consulting Group LLC
+                    </h4>
+                    <div class="description">PHP/Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Spring, TX
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://vshred.bamboohr.com/jobs/view.php?id=6" href="/job/1157">
+                            <img width="65" height="65" src="/storage/logos/thKM61QyNYFUSTzbzJJZdkYZz7vmJFqn2Z8xVPaX.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                V Shred
+                    </h4>
+                    <div class="description">Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Las Vegas, NV
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://vshred.bamboohr.com/jobs/view.php?id=5" href="/job/1156">
+                            <img width="65" height="65" src="/storage/logos/thKM61QyNYFUSTzbzJJZdkYZz7vmJFqn2Z8xVPaX.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                V Shred
+                    </h4>
+                    <div class="description">Senior Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Las Vegas, NV
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="http://hashtag-labs.com/jobs/senior-software-developer" href="/job/1155">
+                            <img width="65" height="65" src="/storage/logos/WWMMNTnKsWwjFi49tL7HWBH9UWuLm4UChyJx56F5.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Hashtag Labs
+                    </h4>
+                    <div class="description">Senior Software Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        NYC or Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://hire.teamlmi.com/kdswad" href="/job/1154">
+                            <img width="65" height="65" src="/storage/logos/3154258d2d9a9886c521069349b9b8f2.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Kirschbaum Development Group
+                    </h4>
+                    <div class="description">Laravel Partner seeks Lead Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="">
+    <td>
+        <a data-url="https://umggaming.com/careers" href="/job/1153">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                UMG Gaming
+                    </h4>
+                    <div class="description">PHP/Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        St. Louis
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="">
+    <td>
+        <a data-url="https://grnh.se/qtmpa3sr1" href="/job/1152">
+                            <img width="65" height="65" src="/storage/logos/FSogGhvFJB7rbgwa5Mk4mPjpnrWX8OoiG9JZQsxD.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Quartzy
+                    </h4>
+                    <div class="description">Software Enginner</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Palo Alto / Remote - US
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://authenticjobs.com/jobs/30561/full-stack-developer" href="/job/1151">
+                            <img width="65" height="65" src="/storage/logos/5Tqz15cgEomscVEoTfQunaTUkjAv8HGwPfpLMltv.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Primo, Inc.
+                    </h4>
+                    <div class="description">Full Stack Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Charlotte, NC / Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://bemyguest.bamboohr.com/jobs/view.php?id=21" href="/job/1150">
+                            <img width="65" height="65" src="/storage/logos/1846759cb536377de7834ad756ceec63.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                BeMyGuest - bemyguest.com.sg
+                    </h4>
+                    <div class="description">Senior PHP back-end programmer - join one of Fast Company’s World&#039;s Top 50 Most Innovative Companies (2016)</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Singapore
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://liquid.fish/careers/php" href="/job/1149">
+                            <img width="65" height="65" src="/storage/logos/VYoAvsTCwlQeBzcvl2fl2V1TX94iACxA73K9jUtk.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                liquidfish
+                    </h4>
+                    <div class="description">PHP Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Oklahoma City
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.seattlewebdesign.com/about-us/current-job-openings" href="/job/1148">
+                            <img width="65" height="65" src="/storage/logos/NyvCACwmMmVsonQdlJfDwGnxNYzAqqhUpO5wD7Pz.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                efelle creative
+                    </h4>
+                    <div class="description">PHP/Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Seattle, WA
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://simplify3d.applicantpool.com/jobs/231830.html" href="/job/1147">
+                            <img width="65" height="65" src="/storage/logos/2kRXV42c2zsednFOhJVNuCiImoeKezDVku40uzY0.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Simplify3D
+                    </h4>
+                    <div class="description">Full Stack Sr. Web Developer - Laravel</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Cincinnati, Ohio
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="http://jea.org/wp/blog/2018/04/26/job-opportunity-contract-web-developer/" href="/job/1146">
+                            <img width="65" height="65" src="/storage/logos/cYI0h0yx2tSS1ajXRBvnkI0Wtn7vEOulu0p72VQu.jpeg">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                Journalism Education Association
+                    </h4>
+                    <div class="description">Contract Full Stack Web Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="http://www.edusourced.com/2018/04/25/full-stack-laravel-developer/" href="/job/1145">
+                            <img width="65" height="65" src="/storage/logos/8d5951d4e706d17246c2edd4c843df4a.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                EduSourced
+                    </h4>
+                    <div class="description">Full Stack Laravel Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Remote or Columbus, Ohio
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.lenderhomepage.com/careers/php-laravel-developer" href="/job/1144">
+                            <img width="65" height="65" src="/storage/logos/eGhvGNCn7lQuC4de2IPyRYzOrRn2ZNCO289tWVfR.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                LenderHomePage.com
+                    </h4>
+                    <div class="description">Full Stack Web Developer (Laravel / Vue) - Mid-level</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://64robots.com/careers" href="/job/1143">
+                            <img width="65" height="65" src="/storage/logos/lwxnwruexzHIx42Ooqy9w0YAThTMfNcOmekfT6wP.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                64 Robots
+                    </h4>
+                    <div class="description">Senior Laravel and/or Vue.js Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-globe muted"></i>
+                                        Remote
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.linkedin.com/jobs/view/622425481/" href="/job/1142">
+                            <img width="65" height="65" src="/storage/logos/ZzAZT1q7Miu7qNjFX9JEyauGDFmuL5477JX0iDST.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                STK Finans AS
+                    </h4>
+                    <div class="description">Senior System Developer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Oslo, Norway
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>            </table>
+
+                </div>
+                                    <div class="col-md-4 sidebar">
+    <div class="postJob">
+      <a href="/create" class="btn btn-primary btn-lg btn-block postJob-button">Post a Job</a>
+      <small class="postJob-microcopy">
+        - Starting at $300 for 60 days<br>
+        <div style="text-align:left;margin-top:10px;">
+        - The best way to reach PHP's brightest devs<br>
+        - Reach over 100K devs via our partner network<br>
+        - @LaravelJobs  tweet to thousands of developers<br>
+        - Emailed to our instant notification list<br>
+        - Link in the LaraJobs newsletter (optional)<br>
+        - Link in the Laravel News newsletter (optional)
+        </div>
+      </small>
+    </div>
+
+    <p>LaraJobs is the best place to post your PHP, Laravel, or technical guru jobs. We work with major developer resource sites to find the best candidates for great jobs.<br> → <a href="/about#partners">learn more</a></p>
+
+    <div class="quotebar clearfix">
+        <div class="quote_person"><img src="/img/matt.jpg"></div>
+        <div class="quote_body">
+            “Listing our technical and non-technical jobs through LaraJobs was simple and quick, and helped us find amazing candidates.<br><br>We've now hired three times through LaraJobs and we'll absolutely use it again!”<br>
+            <span class="quote_name">Matt Stauffer, Tighten Co.</span>
+        </div>
+    </div>
+
+    <div class="quotebar clearfix">
+        <div class="quote_person"><img src="/img/dayle.jpg" /></div>
+        <div class="quote_body">
+            &#8220;We've had great applications via LaraJobs, it’s definitely paid for itself!&#8221;<br />
+            <span class="quote_name">Dayle Rees</span>
+        </div>
+    </div>
+
+    <h4>Follow Us</h4>
+    <p>We post cool new jobs and other interesting tidbits real time on twitter.</p>
+    <a href="https://twitter.com/laraveljobs" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @laraveljobs</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <a href="https://laratalent.com/?utm_source=larajobs&utm_medium=web&utm_campaign=sidebar" style="display: block;height:30px;margin-top: 20px;"><img src="/img/laratalent.svg" style="height:30px;" /></a>
+    <p>Try our sister site <a href="https://laratalent.com/?utm_source=larajobs&utm_medium=web&utm_campaign=sidebar"><strong>LaraTalent</strong></a>. We find the best employers and match them up with the best devs. It's an all-new way to hire and be hired.</p>
+</div>                            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <nav>
+                <ul class="list-inline">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    
+                    <li><a href="/feed">RSS Feed</a>
+                </ul>
+            </nav>
+            <div>
+                <!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com :: Campaign Title: LaraJobs Embedded -->
+                                <div id="om-iomyvcpnpkmwqrzb-holder"></div><script>var iomyvcpnpkmwqrzb,iomyvcpnpkmwqrzb_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){iomyvcpnpkmwqrzb_poll(function(){if(window['om_loaded']){if(!iomyvcpnpkmwqrzb){iomyvcpnpkmwqrzb=new OptinMonsterApp();return iomyvcpnpkmwqrzb.init({"u":"788.461262","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;iomyvcpnpkmwqrzb=new OptinMonsterApp();iomyvcpnpkmwqrzb.init({"u":"788.461262","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->
+                            </div>
+            <div class="bottom">
+                &copy; 2014 - 2018 &mdash; Created by <a href="http://userscape.com">UserScape</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Instant Notify -->
+        <div id="om-dtg9ed5pjolileau-holder"></div><script>var dtg9ed5pjolileau,dtg9ed5pjolileau_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){dtg9ed5pjolileau_poll(function(){if(window['om_loaded']){if(!dtg9ed5pjolileau){dtg9ed5pjolileau=new OptinMonsterApp();return dtg9ed5pjolileau.init({u:"788.183118",staging:0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optinmonster.com/app/js/api.min.js",o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;dtg9ed5pjolileau=new OptinMonsterApp();dtg9ed5pjolileau.init({u:"788.183118",staging:0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->
+    
+    <!-- Scripts -->
+        <script src="/js/app.js"></script>
+</body>
+</html>
