@@ -15,14 +15,12 @@ class LarajobsScraper:
         Scrape new job postings off Larajobs into a local db
         """
         res = self.browser.open(self.url)
-        #html = res.read()
+        html = res.read()
         html = open('page_log.txt', 'r').read()
         soup = BeautifulSoup(html,"html.parser")
 
-        """
         with open('page_log.txt', 'w') as log:
             log.write(html)
-        """
 
         jobs = self.get_jobs(soup)
 
@@ -154,10 +152,13 @@ class LarajobsScraper:
         """
         covered = 0
 
+        if len(tech_stack) < 1:
+            return 1
+
         skillset = [skill.lower() for skill in self.skillset]
 
         for tech in tech_stack:
             if tech in skillset:
                 covered += 1
 
-        return  float(covered) / len(tech_stack)
+        return  round(float(covered) / len(tech_stack), 2)

@@ -1,4 +1,6 @@
 import sqlite3
+from keywords import KeywordsScraper
+from mechanize import *
 
 def create_table(conn, sql):
     try:
