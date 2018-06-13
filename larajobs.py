@@ -8,27 +8,30 @@ class LarajobsScraper:
         self.url = 'http://www.larajobs.com'
         self.skillset = skillset
         self.technologies = technologies
-        self.db_conn = sqlite3.connect('jobs.db')
+        self.conn = sqlite3.connect('jobs.db')
 
     def scrape(self):
         """
         Scrape new job postings off Larajobs into a local db
         """
         res = self.browser.open(self.url)
-        html = res.read()
+        #html = res.read()
+        html = open('page_log.txt', 'r').read()
         soup = BeautifulSoup(html,"html.parser")
 
+        """
         with open('page_log.txt', 'w') as log:
             log.write(html)
+        """
 
         jobs = self.get_jobs(soup)
 
         for job in jobs:
             if not self.job_indexed(job['lara_job_id']):
-                try:
-                    self.browse_job_page(job['href'])
-                except:
-                    continue
+                tech_stack, emails = self.browse_job_page(job['href'])
+
+                if (tech_stack is not None) and (emails is not None):
+                    self.save_job(job, tech_stack, emails)
 
     def get_jobs(self, soup, preferred_location = 'remote'):
         """
@@ -84,28 +87,62 @@ class LarajobsScraper:
         and information needed to apply
         """
         keywords = []
+        emails = []
 
-        res = self.browser.open(url)
-        html = str(res.read()).lower()
+        try:
+            res = self.browser.open(url)
+            html = str(res.read()).lower()
+        except:
+            return None, None
 
         for tech in self.technologies:
             if tech.lower() in html:
                 keywords.append(tech)
 
         emails = re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", html)
-        print emails
 
-        print keywords
+        return keywords, emails
 
     def get_job_id(self, url):
         """
         Get id of job as on Larajobs
         """
         parts = url.split("/")
-        return parts[-1:]
+        return parts[len(parts) - 1]
 
-    def job_indexed(job_id):
+    def job_indexed(self, job_id):
         """
         Check to see whether we are already tracking this job in our local db
         """
-        return True
+        db_id = 'lara_' + job_id
+
+        cur = self.conn.cursor()
+        cur.execute("SELECT * FROM jobs WHERE job_id=?", (db_id,))
+
+        rows = cur.fetchall()
+
+        if len(rows):
+            return True
+
+        return False
+
+    def save_job(self, job, tech_stack, emails):
+        """
+        Save a job into the local db
+        """
+        match = 10; #self.calculate_match(tech_stack)
+        job_id = 'lara_' + job['lara_job_id']
+        emails = ",".join(emails)
+        title = job['title']
+        url = job['href']
+        company = job['company']
+        applied = 0
+
+        values = (job_id, title, company, emails, url, applied, match)
+
+        sql = """INSERT INTO jobs(job_id, title, company, emails, url, applied, match)
+                  VALUES(?, ?, ?, ?, ?, ?, ?)"""
+
+        with self.conn:
+            cur = self.conn.cursor()
+            cur.execute(sql, values)

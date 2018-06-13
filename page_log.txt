@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="V4XkRywyazJZEyJR5idYG57k1PHePnLPy8croQ8j">
+    <meta name="csrf-token" content="9yzbpP5dz1sFzUmroSEXEglUAS06YJGXP8AywomV">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = {"csrfToken":"V4XkRywyazJZEyJR5idYG57k1PHePnLPy8croQ8j"}    </script>
+        window.Laravel = {"csrfToken":"9yzbpP5dz1sFzUmroSEXEglUAS06YJGXP8AywomV"}    </script>
 </head>
 <body>
     <div id="app">

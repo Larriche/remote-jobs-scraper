@@ -12,7 +12,6 @@ conn = sqlite3.connect('jobs.db')
 
 job_table_sql = """
                 CREATE TABLE IF NOT EXISTS jobs(
-                    id INT AUTO INCREMENT PRIMARY KEY,
                     job_id VARCHAR(255) UNIQUE,
                     title VARCHAR(255),
                     company VARCHAR(255),
