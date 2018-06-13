@@ -97,7 +97,7 @@ class LarajobsScraper:
 
         for tech in self.technologies:
             if tech.lower() in html:
-                keywords.append(tech)
+                keywords.append(tech.lower())
 
         emails = re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", html)
 
@@ -130,7 +130,7 @@ class LarajobsScraper:
         """
         Save a job into the local db
         """
-        match = 10; #self.calculate_match(tech_stack)
+        match = self.calculate_match(tech_stack)
         job_id = 'lara_' + job['lara_job_id']
         emails = ",".join(emails)
         title = job['title']
@@ -146,3 +146,18 @@ class LarajobsScraper:
         with self.conn:
             cur = self.conn.cursor()
             cur.execute(sql, values)
+
+    def calculate_match(self, tech_stack):
+        """
+        Calculate how much user's skillset matches a company's tech
+        stack
+        """
+        covered = 0
+
+        skillset = [skill.lower() for skill in self.skillset]
+
+        for tech in tech_stack:
+            if tech in skillset:
+                covered += 1
+
+        return  float(covered) / len(tech_stack)
