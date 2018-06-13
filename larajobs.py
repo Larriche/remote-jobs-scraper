@@ -1,4 +1,5 @@
 import re
+import sqlite3
 from bs4 import BeautifulSoup
 
 class LarajobsScraper:
@@ -7,6 +8,7 @@ class LarajobsScraper:
         self.url = 'http://www.larajobs.com'
         self.skillset = skillset
         self.technologies = technologies
+        self.db_conn = sqlite3.connect('jobs.db')
 
     def scrape(self):
         """
@@ -22,10 +24,11 @@ class LarajobsScraper:
         jobs = self.get_jobs(soup)
 
         for job in jobs:
-            try:
-                self.browse_job_page(job['href'])
-            except:
-                continue
+            if not self.job_indexed(job['lara_job_id']):
+                try:
+                    self.browse_job_page(job['href'])
+                except:
+                    continue
 
     def get_jobs(self, soup, preferred_location = 'remote'):
         """
@@ -100,3 +103,9 @@ class LarajobsScraper:
         """
         parts = url.split("/")
         return parts[-1:]
+
+    def job_indexed(job_id):
+        """
+        Check to see whether we are already tracking this job in our local db
+        """
+        return True
