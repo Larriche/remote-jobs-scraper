@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="nyJfh56ILmW0OwULOAZXScQ0jgiKHCiG9GQoXJC2">
+    <meta name="csrf-token" content="V4XkRywyazJZEyJR5idYG57k1PHePnLPy8croQ8j">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = {"csrfToken":"nyJfh56ILmW0OwULOAZXScQ0jgiKHCiG9GQoXJC2"}    </script>
+        window.Laravel = {"csrfToken":"V4XkRywyazJZEyJR5idYG57k1PHePnLPy8croQ8j"}    </script>
 </head>
 <body>
     <div id="app">
@@ -79,12 +79,49 @@
     <table class="jobs">
                     <tr class="highlight">
     <td>
+        <a data-url="https://celearningsystems.bamboohr.com/jobs/view.php?id=4" href="/job/1175">
+                            <img width="65" height="65" src="/storage/logos/OygOqxDOhWVsExDxyZHaGKGY8PBM25fUbcmuHvG5.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                    <div class="new">NEW</div>
+                                                CE Learning Systems LLC
+                    </h4>
+                    <div class="description">Full Stack Developer - Laravel &amp; Vue</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Remote (US Only)
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
+        <a data-url="https://www.linkedin.com/jobs/cap/view/719095500/?pathWildcard=719095500&amp;trk=job_capjs" href="/job/1174">
+                            <img width="65" height="65" src="/storage/logos/dvqMR7rME3Un1aYRVMGcuQxXoumxcw12dSCDFUKi.png">
+                        <div class="job-wrap">
+                <div class="details">
+                    <h4>
+                                                    <div class="new">NEW</div>
+                                                Sycle
+                    </h4>
+                    <div class="description">Web Software Engineer</div>
+                </div>
+                <div style="font-size: small;">
+                                            <i class="fa fa-map-marker muted"></i>
+                                        Vancouver, bc
+                </div>
+            </div>
+        </a>
+    </td>
+</tr>                    <tr class="highlight">
+    <td>
         <a data-url="https://www.tryphi.com/job/laravel-developer/" href="/job/1173">
                             <img width="65" height="65" src="/storage/logos/3tn4lwGVQjorlwPbxh3g8fTZaKiWTxX8uoN62kl8.jpeg">
                         <div class="job-wrap">
                 <div class="details">
                     <h4>
-                                                    <div class="new">NEW</div>
                                                 Phi Gaming, LLC
                     </h4>
                     <div class="description">Laravel Developer</div>
@@ -103,7 +140,6 @@
                         <div class="job-wrap">
                 <div class="details">
                     <h4>
-                                                    <div class="new">NEW</div>
                                                 True Compliance
                     </h4>
                     <div class="description">Laravel Developer | £35 - 40k | London</div>
@@ -122,7 +158,6 @@
                         <div class="job-wrap">
                 <div class="details">
                     <h4>
-                                                    <div class="new">NEW</div>
                                                 hosttech GmbH
                     </h4>
                     <div class="description">Fullstack Developer</div>
@@ -227,6 +262,7 @@
 </tr>                    <tr class="highlight">
     <td>
         <a data-url="https://zingle.workable.com/jobs/737337" href="/job/1165">
+                            <img width="65" height="65" src="/storage/logos/rEsFp0SRsvYd6xUs3MNQ45nrMLeAmEprH4hAH0Tf.png">
                         <div class="job-wrap">
                 <div class="details">
                     <h4>
@@ -273,24 +309,6 @@
                 <div style="font-size: small;">
                                             <i class="fa fa-map-marker muted"></i>
                                         Porto, Portugal
-                </div>
-            </div>
-        </a>
-    </td>
-</tr>                    <tr class="highlight">
-    <td>
-        <a data-url="https://docs.google.com/forms/d/e/1FAIpQLSeYL-KaPKHCkT3o8eIRcleScce0qC_V-h6GdGY8ih1657zwdA/viewform?usp=pp_url" href="/job/1162">
-                            <img width="65" height="65" src="/storage/logos/oci9gfNE6ttsDeesITQjPVHHqJ7DsGAqeC4928Rz.png">
-                        <div class="job-wrap">
-                <div class="details">
-                    <h4>
-                                                ShineOn
-                    </h4>
-                    <div class="description">Engineer with previous full-time Laravel experience required / Ecom a plus.</div>
-                </div>
-                <div style="font-size: small;">
-                                            <i class="fa fa-globe muted"></i>
-                                        Remote
                 </div>
             </div>
         </a>
@@ -650,24 +668,6 @@
                 <div style="font-size: small;">
                                             <i class="fa fa-globe muted"></i>
                                         Remote
-                </div>
-            </div>
-        </a>
-    </td>
-</tr>                    <tr class="highlight">
-    <td>
-        <a data-url="https://www.linkedin.com/jobs/view/622425481/" href="/job/1142">
-                            <img width="65" height="65" src="/storage/logos/ZzAZT1q7Miu7qNjFX9JEyauGDFmuL5477JX0iDST.png">
-                        <div class="job-wrap">
-                <div class="details">
-                    <h4>
-                                                STK Finans AS
-                    </h4>
-                    <div class="description">Senior System Developer</div>
-                </div>
-                <div style="font-size: small;">
-                                            <i class="fa fa-map-marker muted"></i>
-                                        Oslo, Norway
                 </div>
             </div>
         </a>
